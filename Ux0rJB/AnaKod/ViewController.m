@@ -129,19 +129,15 @@ error = NULL; \
                         chdir("/var/containers/Bundle/");
                     self->_outPutWindow.text = [[self->_outPutWindow text] stringByAppendingString: @"\nBundle Oluşturuldu."];
                         FILE *bootstrap = fopen((char*)in_bundle("tars/iosbinpack.tar"), "r");
-                            untar(bootstrap, "/var/containers/Bundle/");
+                        
                         self->_outPutWindow.text = [[self->_outPutWindow text] stringByAppendingString: @"\niOSBinPack.tar Atıldı..."];
                         fclose(bootstrap);
                         FILE *tweaks = fopen((char*)in_bundle("tars/tweaksupport.tar"), "r");
-                        untar(tweaks, "/var/containers/Bundle/");
+                        
                         self->_outPutWindow.text = [[self->_outPutWindow text] stringByAppendingString: @"\nTweakSupport.tar Atıldı..."];
                         fclose(tweaks);
                         fileExists("/var/containers/Bundle/tweaksupport") || !fileExists("/var/containers/Bundle/iosbinpack64");
                         self->_outPutWindow.text = [[self->_outPutWindow text] stringByAppendingString: @"\nSymLink Olusturuluyor..."];
-                            symlink("/var/containers/Bundle/tweaksupport/Library", "/var/LIB");
-                            symlink("/var/containers/Bundle/tweaksupport/usr/lib", "/var/ulb");
-                            symlink("/var/containers/Bundle/tweaksupport/bin", "/var/bin");
-                            symlink("/var/containers/Bundle/tweaksupport/sbin", "/var/sbin");
                         self->_outPutWindow.text = [[self->_outPutWindow text] stringByAppendingString: @"\nBasarılı..."];
                             
                         }
