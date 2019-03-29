@@ -4,7 +4,7 @@ Developed By ALI CAN GÖNÜLLÜ
 
 Log Kodu :
 -----------------------------
-<code>
+<pre><code>
   [D] platform: iPhone8,1 16C101
 [+] created 1024 pipes
 [+] created 8000 ports
@@ -40,4 +40,4 @@ Copied the user client over
 Wrote the `add x0, x0, #0x40; ret;` gadget over getExternalTrapForIndexour proc is at 0xffffffe00693e7b0
 kern proc is at 0xfffffff009e6c988
 [D] UID: 0
-</code>
+</code></pre>
