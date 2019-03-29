@@ -5,7 +5,7 @@ Developed By ALI CAN GÖNÜLLÜ
 Log Kodu :
 -----------------------------
 <pre><code>
-  [D] platform: iPhone8,1 16C101
+[D] platform: iPhone8,1 16C101
 [+] created 1024 pipes
 [+] created 8000 ports
 [+] sprayed 16646144 bytes to 1016 pipes in kalloc.16384
